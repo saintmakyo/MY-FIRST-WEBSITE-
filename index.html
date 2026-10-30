@@ -1,17 +1,72 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXA AI - Your AI Assistant</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Welcome to My Website!</h1>
+    <div class="app">
 
-    <p>I am learning web development.</p>
+        <header class="topbar">
+            <h2>NEXA <span>AI</span></h2>
+            <button id="newChat">+ New Chat</button>
+        </header>
 
-    <button>Click Me</button>
+        <main class="main-content">
+
+            <section class="welcome">
+                <div class="logo">✦</div>
+
+                <h1>What can I help you with?</h1>
+
+                <p>
+                    Ask questions, explore ideas
+                    and discover something new.
+                </p>
+            </section>
+
+            <section class="chat-container">
+
+                <div id="messages">
+                    <div class="message ai-message">
+                        Hello! I'm NEXA AI.
+                        How can I help you today?
+                    </div>
+                </div>
+
+                <div class="input-container">
+
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Ask NEXA anything..."
+                    >
+
+                    <button id="sendButton">
+                        Send
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    NEXA AI can make mistakes.
+                    Check important information.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
